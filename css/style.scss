@@ -1,3 +1,7 @@
+$themeColor : white;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -5,3 +9,63 @@
 }
 
 
+body{
+    font-family:'Roboto',sans-serif;
+    div.fix-img{
+    position: absolute;
+    background-image: url(../images/mike-petrucci-c9FQyqIECds-unsplash.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    }
+    header{
+        
+        nav{
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 5px 3px 8px rgb(74, 81, 69);
+            div{
+                flex: 1 1 200px;
+                i{
+                    a{
+                      text-decoration: none;
+                    }
+                }
+            }
+            ul{
+                flex: 3 1 600px;
+                list-style-type: none;
+                display: flex;
+                justify-content: flex-end;
+                // align-items: center;
+                li{
+                    padding: 1.75rem;
+                    a{
+                        text-decoration: none;
+                        font-weight: 400;
+                        color: $themeColor;
+                        font-size: 1.25rem;
+                        transition: all ease 1s;
+
+                        &:hover{
+                            color: rgb(144, 207, 227);
+                            border-bottom: 3px rgb(0, 0, 0);
+                        }
+                    }   
+
+                }
+            }
+
+            div.photo{
+                div{
+                    
+                }
+            }
+        }
+    }   
+}

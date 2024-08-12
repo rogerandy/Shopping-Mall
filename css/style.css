@@ -1,5 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+body div.fix-img {
+  position: absolute;
+  background-image: url(../images/mike-petrucci-c9FQyqIECds-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 5px 3px 8px rgb(74, 81, 69);
+}
+body header nav div {
+  flex: 1 1 200px;
+}
+body header nav div i a {
+  text-decoration: none;
+}
+body header nav ul {
+  flex: 3 1 600px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+body header nav ul li {
+  padding: 1.75rem;
+}
+body header nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+  font-size: 1.25rem;
+  transition: all ease 1s;
+}
+body header nav ul li a:hover {
+  color: rgb(144, 207, 227);
+  border-bottom: 3px rgb(0, 0, 0);
 }/*# sourceMappingURL=style.css.map */
